@@ -1,0 +1,39 @@
+INFO:root:--------------------------------------------------
+INFO:root:CAN FD Information Logger: Mon Jun 04 14:29:21 2018
+INFO:root:--------------------------------------------------
+INFO:root:bitrate: f_clock_mhz=25, nom_brp=2, nom_tseg1=16, nom_tseg2=8, nom_sjw=4, data_brp=1, data_tseg1=16, data_tseg2=8, data_sjw=4
+WARNING:root:CANFD Initialization error: A parameter contains an invalid value
+WARNING:root:CANFD Status Error: A PCAN Channel has not been initialized yet or the initialization process has failed
+WARNING:root:CANFD Write Error: (0, 'A PCAN Channel has not been initialized yet or the initialization process has failed')
+INFO:root:--------------------------------------------------
+INFO:root:CAN FD Information Logger: Mon Jun 04 14:30:24 2018
+INFO:root:--------------------------------------------------
+INFO:root:bitrate: f_clock_mhz=25, nom_brp=2, nom_tseg1=16, nom_tseg2=8, nom_sjw=4, data_brp=1, data_tseg1=16, data_tseg2=8, data_sjw=4
+INFO:root:PCAN-USB Pro FD (Ch-1) was initialized
+INFO:root:PCAN_USB (Ch-x): Status is OK
+INFO:root:*Mon Jun 04 14:30:24 2018,Total Error:0 Iteration No 1
+INFO:root:--------------------------------------------------
+INFO:root:CAN FD Information Logger: Mon Jun 04 14:30:51 2018
+INFO:root:--------------------------------------------------
+INFO:root:bitrate: f_clock_mhz=25, nom_brp=2, nom_tseg1=16, nom_tseg2=8, nom_sjw=4, data_brp=1, data_tseg1=16, data_tseg2=8, data_sjw=4
+INFO:root:PCAN-USB Pro FD (Ch-1) was initialized
+INFO:root:PCAN_USB (Ch-x): Status is OK
+INFO:root:*Mon Jun 04 14:30:51 2018,Total Error:0 Iteration No 1
+INFO:root:*Mon Jun 04 14:30:51 2018,Total Error:0 Iteration No 2
+INFO:root:*Mon Jun 04 14:30:51 2018,Total Error:0 Iteration No 3
+INFO:root:--------------------------------------------------
+INFO:root:CAN FD Information Logger: Mon Jun 04 14:31:57 2018
+INFO:root:--------------------------------------------------
+INFO:root:bitrate: f_clock_mhz=25, nom_brp=2, nom_tseg1=16, nom_tseg2=8, nom_sjw=4, data_brp=1, data_tseg1=16, data_tseg2=8, data_sjw=4
+INFO:root:PCAN-USB Pro FD (Ch-1) was initialized
+INFO:root:PCAN_USB (Ch-x): Status is OK
+INFO:root:*Mon Jun 04 14:31:57 2018,Total Error:0 Iteration No 1
+INFO:root:*Mon Jun 04 14:31:57 2018,Total Error:0 Iteration No 2
+INFO:root:*Mon Jun 04 14:31:57 2018,Total Error:0 Iteration No 3
+INFO:root:*Mon Jun 04 14:31:57 2018,Total Error:0 Iteration No 4
+INFO:root:*Mon Jun 04 14:31:57 2018,Total Error:0 Iteration No 5
+INFO:root:*Mon Jun 04 14:31:57 2018,Total Error:0 Iteration No 6
+INFO:root:*Mon Jun 04 14:31:57 2018,Total Error:0 Iteration No 7
+INFO:root:*Mon Jun 04 14:31:57 2018,Total Error:0 Iteration No 8
+INFO:root:*Mon Jun 04 14:31:57 2018,Total Error:0 Iteration No 9
+INFO:root:*Mon Jun 04 14:31:57 2018,Total Error:0 Iteration No 10

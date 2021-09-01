@@ -1,0 +1,24 @@
+#!gbuild
+macro DIE=tviibh4m
+macro SERIES=cyt4bb
+macro DEVICE=CYT4BB8CEE   # 176-TEQFP
+#macro DEVICE=CYT4BBBCEE   # 272-BGA
+macro CPU_BOARD_REV=B     # A or B (and so on)
+
+macro SERIES_FOLDER_REL_PATH=..\..
+macro COMMON_FOLDER_REL_PATH=..\..\..\common
+macro RTOS_PORT_PATH=GHS\ARM_CM7\r0p1
+
+[Project]
+    :optionsFile=options_global.opt
+    
+_gpj/flash.gpj
+_gpj/sram.gpj
+_gpj/libmw_top.gpj
+_gpj/libsdl_top.gpj
+_gpj/librtos_top.gpj
+{isdefined(BUILD_CRYPTO_LIBS)}_gpj/libcrypto_top.gpj
+_gpj/debugging.gpj
+options_global.opt
+options_cm0plus.opt
+options_cm7.opt

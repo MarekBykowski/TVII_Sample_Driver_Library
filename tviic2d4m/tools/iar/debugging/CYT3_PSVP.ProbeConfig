@@ -1,0 +1,7 @@
+; CYT3 PSVP (Cortex-M0+ + Cortex-M7)
+
+"BYPASS" BYPASS12
+"M0+"    "Cortex-M0+:1"
++"M7_0"  "Cortex-M7:2"
+
+; End of file

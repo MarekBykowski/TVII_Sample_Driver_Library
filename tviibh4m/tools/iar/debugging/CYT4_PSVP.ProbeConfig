@@ -1,0 +1,8 @@
+; CYT4 (Cortex-M0+ + Cortex-M7 + Cortex-M7)
+
+"BYPASS" BYPASS12
+"M0+"    "Cortex-M0+:1"
++"M7_0"  "Cortex-M7:2"
++"M7_1"  "Cortex-M7:3"
+
+; End of file

@@ -1,0 +1,95 @@
+'********** ControllerInit Diagram *************
+@startuml(id=ControllerInit)
+start
+:Cy_Lpddr_ControllerEnable();
+:Cy_Lpddr_Pll800MManualConfigure();
+:Cy_Lpddr_PllEnable();
+repeat
+:Read PLL Lock Status;
+repeat while (PLL unLocked?)is (yes)
+:Cy_Lpddr_PllOutputEnable();
+:Cy_Lpddr_SetupArbiterMode();
+:Cy_Lpddr_SetupModeRegisters();
+:Cy_Lpddr_SetPhyDdrMode();
+:Cy_Lpddr_SetupBISTRegister();
+:Cy_Lpddr_SetPhyTiming();
+:Cy_Lpddr_SetupDLL();
+:Cy_Lpddr_SetAdressConfig();
+:Cy_Lpddr_PhyInit();
+:Cy_Lpddr_PhyTraining();
+if (inittype?) then (reload)
+:Cy_Lpddr_SetPTSRRegisters();
+:Cy_Lpddr_PhyReload();
+else (training)
+:Cy_Lpddr_PhyTraining() ;
+endif
+:Cy_Lpddr_RefreshandTimingAdjust();
+:Cy_Lpddr_WriteModeRegister(LPDDR40,CY_LPDDR4_MODEREGISTER_MR23);
+:Cy_Lpddr_StartDQSOscillator();
+:Cy_Lpddr_ReadDQSOscValue();
+:Cy_Lpddr_SendCmd( RUNCMD );
+stop
+@enduml
+
+
+'********** Cy_Lpddr_SetPhyFrequency Diagram *************
+@startuml(id=FSP_CHANGE_PROCESS)
+clock PHY_CLK with period 1
+concise "PLL_OUTPUT_CLK" as pout
+concise "VCO_CLK_SEL" as CLK_SEL
+binary "PLL_output_enable" as EN
+binary "POM.proc" as proc
+binary "POS.fs0req" as fs0req
+binary "POS.fs1req" as fs1req
+@0
+pout is "50 MHz"
+CLK_SEL is "2"
+EN is high
+proc is low
+fs0req is low
+fs1req is low
+@4
+fs1req is high
+@4.5
+EN is low
+@5
+pout is "800 MHz"
+CLK_SEL is "0"
+@5.5
+EN is high
+@5.6
+proc is high
+fs1req is low
+@5.7
+proc is low
+@5.8
+@9
+fs0req is high
+@9.5
+EN is low
+@10
+pout is "50 MHz"
+CLK_SEL is "2"
+@10.5
+EN is high
+@10.6
+proc is high
+fs0req is low
+@10.7
+proc is low
+@20
+@enduml
+
+
+'********** DQS Oscillator Stop Sequence *************
+@startuml(id=DQSSTART)
+start
+:Stop the Controller;
+:Start the DQS Oscillator;
+:Restart the Controller;
+stop
+@enduml
+
+
+
+

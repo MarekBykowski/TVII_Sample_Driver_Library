@@ -1,0 +1,42 @@
+/***************************************************************************//**
+* \file cyreg_dac.h
+*
+* \brief
+* DAC register definition header
+*
+* \note
+* Generator version: 1.6.0.264
+* Database revision: TVIIC2D4M_A0
+*
+********************************************************************************
+* \copyright
+* Copyright 2016-2020, Cypress Semiconductor Corporation. All rights reserved.
+* You may use this file only in accordance with the license, terms, conditions,
+* disclaimers, and limitations in the end user license agreement accompanying
+* the software package with which this file was provided.
+*******************************************************************************/
+
+#ifndef _CYREG_DAC_H_
+#define _CYREG_DAC_H_
+
+#include "cyip_dac.h"
+
+/**
+  * \brief DAC (DAC)
+  */
+#define CYREG_DAC0_CTL                  ((volatile un_DAC_CTL_t*) 0x40840000UL)
+#define CYREG_DAC0_IF_CTL               ((volatile un_DAC_IF_CTL_t*) 0x40840004UL)
+#define CYREG_DAC0_COUNT                ((volatile un_DAC_COUNT_t*) 0x40840008UL)
+#define CYREG_DAC0_STATUS               ((volatile un_DAC_STATUS_t*) 0x40840010UL)
+#define CYREG_DAC0_TX_FIFO_CTL          ((volatile un_DAC_TX_FIFO_CTL_t*) 0x40840080UL)
+#define CYREG_DAC0_TX_FIFO_STATUS       ((volatile un_DAC_TX_FIFO_STATUS_t*) 0x40840084UL)
+#define CYREG_DAC0_TX_FIFO_WR           ((volatile un_DAC_TX_FIFO_WR_t*) 0x40840088UL)
+#define CYREG_DAC0_INTR_TX              ((volatile un_DAC_INTR_TX_t*) 0x408400C0UL)
+#define CYREG_DAC0_INTR_TX_SET          ((volatile un_DAC_INTR_TX_SET_t*) 0x408400C4UL)
+#define CYREG_DAC0_INTR_TX_MASK         ((volatile un_DAC_INTR_TX_MASK_t*) 0x408400C8UL)
+#define CYREG_DAC0_INTR_TX_MASKED       ((volatile un_DAC_INTR_TX_MASKED_t*) 0x408400CCUL)
+
+#endif /* _CYREG_DAC_H_ */
+
+
+/* [] END OF FILE */

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspace>
+    <project>
+        <path>$WS_DIR$\cm7_0_mc\cm7_0.ewp</path>
+    </project>
+    <project>
+        <path>$WS_DIR$\cm7_0_mc\libmw\libmw.ewp</path>
+    </project>
+    <project>
+        <path>$WS_DIR$\cm7_0_mc\libsdl\libsdl.ewp</path>
+    </project>
+    <batchBuild />
+</workspace>

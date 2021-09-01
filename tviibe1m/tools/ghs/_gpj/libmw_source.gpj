@@ -1,0 +1,14 @@
+#!gbuild
+
+[Subproject]
+
+
+$(COMMON_FOLDER_REL_PATH)\src\mw\button\cy_button.c
+$(COMMON_FOLDER_REL_PATH)\src\mw\button\cy_button.h
+$(COMMON_FOLDER_REL_PATH)\src\mw\semihosting\cy_semihosting.c
+$(COMMON_FOLDER_REL_PATH)\src\mw\semihosting\cy_semihosting.h
+$(COMMON_FOLDER_REL_PATH)\src\mw\sw_timer\cy_sw_tmr.c
+$(COMMON_FOLDER_REL_PATH)\src\mw\sw_timer\cy_sw_tmr.h
+$(COMMON_FOLDER_REL_PATH)\src\mw\flash\cy_mw_flash.c
+$(COMMON_FOLDER_REL_PATH)\src\mw\flash\cy_mw_flash.h
+

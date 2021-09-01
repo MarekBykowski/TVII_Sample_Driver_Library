@@ -1,0 +1,2 @@
+In case of silicon on TVII-C CPU board, some of the configured SPI signals are on the same pin like some LED signals.
+So please ensure that the cores where the example is not running on, does not use these LED signals.
